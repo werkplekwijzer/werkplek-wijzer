@@ -28,4 +28,4 @@ AFFILIATE_TAG = os.environ.get("AFFILIATE_TAG", "jouwtag-21")
 # gemini-2.5-flash zit ruim in de gratis tier van Google AI Studio.
 # Kom je rate limits tegen, probeer dan gemini-2.5-flash-lite (nog hogere
 # gratis limieten, iets minder verfijnde tekst).
-GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_MODEL = "gemini-3.6-flash"
