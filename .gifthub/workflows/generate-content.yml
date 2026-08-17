@@ -1,48 +1,12 @@
 name: Nieuw artikel genereren
 
 on:
-  schedule:
-    - cron: "0 8 * * *"   # elke dag 08:00 UTC (~10:00 NL-tijd). Pas aan naar wens.
-  workflow_dispatch: {}    # handmatig starten via het "Actions"-tabblad, handig om te testen
-
-permissions:
-  contents: write
-  pull-requests: write
+  workflow_dispatch:
 
 jobs:
-  generate:
+  test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Repo uitchecken
-        uses: actions/checkout@v4
-
-      - name: Python instellen
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Artikel genereren
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          AFFILIATE_TAG: ${{ secrets.AFFILIATE_TAG }}
-        run: python scripts/generate_article.py
-
-      - name: Pull request openen voor review
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: "Nieuw artikel: automatisch gegenereerd"
-          title: "Nieuw artikel klaar voor review"
-          body: |
-            Automatisch gegenereerd door de content-workflow.
-
-            **Lees dit door voordat je merget.** Let op:
-            - feitelijke fouten of verzonnen claims
-            - rare, herhalende of onnatuurlijke zinnen
-            - of de affiliate-links kloppen
-
-            Merge deze PR om het artikel live te zetten. Sluit 'm zonder
-            merge als het artikel niet goed genoeg is — het onderwerp is
-            dan al afgevinkt in topics.txt, dus je kunt het zo nodig
-            handmatig terugzetten om het later opnieuw te proberen.
-          branch: auto-artikel-${{ github.run_number }}
-          delete-branch: true
+      - name: Test workflow
+        run: echo "De artikel workflow werkt!"
