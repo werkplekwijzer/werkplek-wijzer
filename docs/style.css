@@ -1,0 +1,146 @@
+:root {
+  --ink: #1c2321;
+  --paper: #edefe6;
+  --paper-raised: #f8f9f3;
+  --accent: #c08a28;
+  --accent-ink: #4a3410;
+  --muted: #6b7268;
+  --rule: #cbd0c2;
+  --max: 680px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+a { color: var(--ink); }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.wrap { max-width: var(--max); margin: 0 auto; padding-left: 1.25rem; padding-right: 1.25rem; }
+
+.site-header {
+  border-bottom: 2px solid var(--ink);
+  padding: 2rem 1.25rem 1.5rem;
+}
+.site-header .wrap { padding-left: 0; padding-right: 0; }
+
+.site-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+.site-title a { text-decoration: none; color: inherit; }
+
+.site-tagline {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 0.4rem 0 0;
+}
+
+main { padding: 2.5rem 0 4rem; }
+
+.entry-list { list-style: none; padding: 0; margin: 0; }
+.entry-list li { border-bottom: 1px solid var(--rule); padding: 1.5rem 0; }
+.entry-list li:first-child { padding-top: 0; }
+
+.entry-meta {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.entry-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0.3rem 0 0;
+}
+.entry-title a { text-decoration: none; }
+.entry-title a:hover { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+
+.entry-dek { color: var(--muted); margin: 0.4rem 0 0; }
+
+article h1 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 2.05rem;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+article h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.4rem;
+  margin: 2.2rem 0 0.9rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+article p { margin: 0 0 1.1rem; }
+
+.verdict-stamp {
+  display: inline-block;
+  border: 2px solid var(--accent);
+  color: var(--accent-ink);
+  background: var(--paper-raised);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.55rem 0.85rem;
+  transform: rotate(-1.4deg);
+  margin: 0.4rem 0.5rem 1rem 0;
+}
+.verdict-stamp strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin-bottom: 0.15rem;
+  letter-spacing: 0;
+}
+
+.disclosure {
+  font-size: 0.85rem;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  background: var(--paper-raised);
+  padding: 0.9rem 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+.disclosure a { color: var(--muted); }
+
+.site-footer {
+  border-top: 2px solid var(--ink);
+  padding: 2rem 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.site-footer .wrap > p { margin: 0 0 0.6rem; }
+.site-footer a { color: var(--muted); }
+
+@media (max-width: 480px) {
+  .site-title { font-size: 1.55rem; }
+  article h1 { font-size: 1.65rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

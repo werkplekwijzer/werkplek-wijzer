@@ -1,0 +1,17 @@
+# Eén onderwerp per regel. Elke run verwerkt de eerste regel die nog niet
+# met "#" begint, en zet er daarna zelf een "# gedaan"-vinkje voor.
+#
+# BELANGRIJK: vervang deze voorbeelden zoveel mogelijk door onderwerpen
+# waar jij zelf kennis van of ervaring mee hebt. Generieke onderwerpen kan
+# elke AI-site schrijven — jouw eigen invalshoek (getest, gebruikt, kapot
+# zien gaan) is wat een site geloofwaardig maakt en helpt bij Google.
+
+Waar moet je op letten bij het kiezen van een bureaustoel voor thuiswerken
+# gedaan (voorbeeld): De beste budget bureaulampen voor thuiswerken
+Hoofdtelefoon met noise cancelling voor een druk huishouden: waar op letten
+Sta-zit bureau: is het het geld waard en welk type past bij jou
+Monitorarm versus losse standaard: voor- en nadelen voor kleine werkplekken
+Kabelmanagement voor je bureau: praktische opties op een rij
+Webcam-verlichting voor videobellen: budgetopties die echt werken
+Ergonomisch toetsenbord: wanneer is de overstap het waard
+Een tweede monitor kiezen voor een klein bureau: waar let je op
